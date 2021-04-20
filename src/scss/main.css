@@ -1,0 +1,88 @@
+.sidebar {
+  width: 7.1rem;
+  height: 100%;
+  background: #F7E4BB;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.aside-img {
+  text-align: center;
+  padding-top: 4.2rem;
+}
+
+.container {
+  position: fixed;
+  width: 100rem;
+  padding-top: 4.2rem;
+  padding-left: 11.4rem;
+}
+
+header {
+  margin-bottom: 4.2rem;
+}
+
+.header-flex {
+  text-align: center;
+}
+
+.header-food {
+  color: #EBC060;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.header-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-btn .header-plus-img {
+  width: 2.1rem;
+  height: 2.1rem;
+}
+
+.header-add {
+  margin-left: 1.7rem;
+}
+
+.header-add p {
+  color: #E6AF33;
+  font-size: 1.7rem;
+}
+
+.search-form {
+  margin-bottom: 2.8rem;
+}
+
+.display-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+}
+/*# sourceMappingURL=main.css.map */

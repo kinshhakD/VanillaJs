@@ -1,0 +1,130 @@
+.window{
+    font-family: 'Montserrat';
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.35);
+  
+ 
+    
+}
+
+
+.container-window{
+    padding-top: 225px;
+}
+
+.window-header{
+    position: relative;
+    width: 42.3rem;
+    height: 31.8rem;
+    margin: 0 auto;
+    
+    .recipe-image{
+
+        height: 100%;
+        width: 100%;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+    .window-img{
+    position: absolute;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 100%;
+    height: 100%;
+    }
+    
+    .post-block{
+        right: 0;
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+          .btn-post{
+            background-color: rgba(165, 42, 42, 0.816);
+            width: 100%;
+            height: 100%;
+          }
+    }
+}
+
+
+
+.window-body{
+    margin: 0 auto;
+    width: 42.3rem;
+    position: relative;
+    padding: 30px;
+    height: 46.2rem;
+    background: $yellowbold;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+    .window-content{
+        padding: 30px;
+        position: absolute;
+        height: 504px;
+        background: rgb(255, 255, 255);
+        width: 363px;
+        margin-top: -100px;
+        border-radius: 30px;
+
+        .modalW-name{
+            text-align: center;
+            font-size: 36px;
+            padding: 30px;
+
+        }
+
+        .modalW-description{
+            text-align: center;
+            font-size: 24px;
+            font-style: italic;
+            margin-bottom: 3rem;
+        }
+
+        .list-ing{
+            font-size: 24px;
+            list-style-type: none;
+            text-align: center;
+        }
+    }
+    
+
+    .content-body{
+       
+       
+        padding: 30px;
+    }
+}
+
+
+
+.upload-block{
+    padding-top: 20%;
+    text-align: center;
+    
+    
+    .upload{
+    background-color: indigo;
+    color: white;
+    padding: 0.5rem;
+    font-family: sans-serif;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin-top: 1rem;   
+    }
+
+}
+
+
+.ingredients-flex{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}

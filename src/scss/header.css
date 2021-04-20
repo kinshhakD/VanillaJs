@@ -1,0 +1,28 @@
+.header-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+.header-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-btn .header-plus-img {
+  width: 2.1rem;
+  height: 2.1rem;
+}
+
+.header-add {
+  margin-left: 1.7rem;
+}
+/*# sourceMappingURL=header.css.map */

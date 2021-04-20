@@ -1,0 +1,69 @@
+.input-name{
+    
+    margin-bottom: 10px;
+    font-size: 2.4rem;
+    width: 26rem;
+    border: none;
+
+    &:focus{
+        background: 
+        linear-gradient(#000, #000) center bottom 1px /calc(100% - 10px) 1px no-repeat;
+        background-color: #ffffff;
+        outline: none;
+        
+    }
+
+}
+
+.area-desc{
+    overflow: hidden;
+    resize: none;
+    min-height: 50px;
+    max-height: 100px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    width: 26rem;
+    border: none;
+    
+    &:focus{
+        border:  
+        linear-gradient(#000, #000) center bottom 1px /calc(100% - 10px) 1px no-repeat;
+        background-color: #ffffff;
+        
+        
+    }
+}
+
+.post-block{
+    position: absolute;
+    right: 0;
+    padding-right: 25px;
+
+    .btn-post{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.btn-list{
+    
+    float: right;
+    margin-top: -25px;
+    margin-right: 25px;
+
+}
+
+
+.ingredients-block{
+    margin-bottom: 10px;
+    
+}
+
+.ingredients-title{
+    font-size: 24px;
+}
+
+.list-container{
+    height: 250px;
+}

@@ -1,0 +1,41 @@
+header{
+    margin-bottom: 4.2rem;
+}
+
+.btn{
+    cursor: pointer;
+    outline: none;
+    background-color: inherit;
+    border: none;
+}
+
+.header-flex{
+    text-align: center;
+}
+
+.header-food{
+    color: $yellowbold;
+    text-transform: uppercase;
+    font-size: $headerRem;
+}
+
+
+
+.header-btn{
+    display: flex;
+    justify-content: space-between;
+    .header-plus-img{
+        
+        
+    }
+}
+
+
+.header-add{
+    margin-left: 1.7rem;
+    
+    p{
+        color: $yellowreg;
+        font-size: $headerRem;
+    }
+}

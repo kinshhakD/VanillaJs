@@ -1,0 +1,89 @@
+{
+  "dish": [
+    {
+      "id": 1,
+      "dish": "Borsch",
+      "category": "ukraine",
+      "description": "Ukrainian National dish",
+      "ingredients": [
+        "potato",
+        "meat",
+        "carrot",
+        "onion"
+      ],
+      "src": "/src/images/data-dish/borsch.png"
+    },
+    {
+      "id": 2,
+      "dish": "Pizza",
+      "category": "italia",
+      "description": "Italian National dish",
+      "ingredients": [
+        "sausages",
+        "bread",
+        "cheese",
+        "tomato"
+      ],
+      "src": "/src/images/data-dish/pizza.jpg"
+    },
+    {
+      "id": 3,
+      "dish": "Burger",
+      "category": "america",
+      "description": "American National dish",
+      "ingredients": [
+        "bud",
+        "meat",
+        "cheese",
+        "tomato"
+      ],
+      "src": "/src/images/data-dish/burger.jpg"
+    },
+    {
+      "id": 4,
+      "dish": "Potato",
+      "category": "other",
+      "description": "National dish",
+      "ingredients": [
+        "potato"
+      ],
+      "src": "/src/images/data-dish/potato.jpg"
+    },
+    {
+      "id": 5,
+      "dish": "Potato",
+      "category": "other",
+      "description": "National dish",
+      "ingredients": [
+        "potato"
+      ],
+      "src": "/src/images/data-dish/potato.jpg"
+    },
+    {
+      "id": 6,
+      "dish": "Burger",
+      "category": "america",
+      "description": "American National dish",
+      "ingredients": [
+        "bud",
+        "meat",
+        "cheese",
+        "tomato"
+      ],
+      "src": "/src/images/data-dish/burger.jpg"
+    },
+    {
+      "id": 7,
+      "dish": "Burger",
+      "category": "america",
+      "description": "American National dish",
+      "ingredients": [
+        "bud",
+        "meat",
+        "cheese",
+        "tomato"
+      ],
+      "src": "/src/images/data-dish/burger.jpg"
+    }
+  ]
+}
