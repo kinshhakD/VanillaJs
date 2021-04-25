@@ -1,5 +1,3 @@
-import { call } from "file-loader";
-
 const createDiv = (classList) => {
 
     const div = document.createElement("div");
@@ -9,12 +7,7 @@ const createDiv = (classList) => {
     return div;
   };
 
-
-
-const filterNew = (category,items) => {
-  
-  
-    // const buttons = document.querySelectorAll('.btn-filter');
+const filterCategory = (category,items) => {
   
       items.forEach(item => {
        
@@ -23,21 +16,55 @@ const filterNew = (category,items) => {
         const isShowAll = category.toLowerCase() === 'all';
   
         if (isItemFiltered && !isShowAll){
+
           item.classList.add('dnone');
+
         } else { 
+
           item.classList.remove('dnone');
+          
         }
       })
 }
 
+const isShowAllCategory = () => {
 
-const uniqueCategoryButtons = (callback) => {
+  const buttonBlock = createDiv('btn-category dnone');
 
-  
+  const button = document.createElement('button');
 
+  button.classList = 'btn-filter';
 
+  button.dataset.filter = `all`;
+
+  button.textContent = `Show all`;
+
+  button.addEventListener('click', () => {
+
+    const currentCategory = button.dataset.filter;
+
+    const cards = document.querySelectorAll('.data-item');
+
+    filterCategory(currentCategory, cards);
+
+  })
+
+  buttonBlock.appendChild(button);
+
+  return buttonBlock;
 }
 
+
+
+const uniqueCategoryButtons = async (data) => {
+
+  const result = await data;
+  
+  const setCategory = result.map(el => el.category);
+
+  return new Set(setCategory);
+
+}
 
 const CategoryButton =  (data) => {
 
@@ -47,15 +74,19 @@ const CategoryButton =  (data) => {
 
     button.classList = 'btn-filter';
 
-    button.dataset.filter = `${data.category}`;
+    button.dataset.filter = `${data}`;
 
-    button.textContent = `${data.category}`;
+    button.textContent = `${data}`;
 
     button.addEventListener('click', () => {
 
+    
+
     const currentCategory = button.dataset.filter;  
+
+    const cards = document.querySelectorAll('.data-item');
       
-     filterNew(currentCategory, document.querySelectorAll('.data-item'));
+     filterCategory(currentCategory, cards);
 
     })
     
@@ -64,7 +95,4 @@ const CategoryButton =  (data) => {
     return buttonBlock;
 }
 
-
-
-
-export default CategoryButton;
+export  {isShowAllCategory, CategoryButton, uniqueCategoryButtons};

@@ -57,6 +57,15 @@
     .btn-filter{
         width: 80px;
         height: 30px;
+        background: none;
+        color: white;
+        font-size: 20px;
+        border: none;
+
+        &:focus{
+            border: none;
+            outline: none;
+        }
     }
 
 }

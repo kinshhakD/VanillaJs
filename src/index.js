@@ -3,84 +3,41 @@ import "./scss/main.scss";
 import database from "./models/data";
 import blockItem from "./models/content";
 import addRecipeWindow from "./models/addModal";
-import filter from "./models/filter";
 import asideTransition from "./models/sidebar";
-import CategoryButton from "./models/CategoryButton";
+import {isShowAllCategory,CategoryButton, uniqueCategoryButtons} from "./models/CategoryButton";
 
 
-
-
-
-
-// запрос на сервер и рендер базы
-
-// renderWrapper((
-//   async () => {
-//     const data = await database();
-//     return data.map((el) =>
-//       document.querySelector(".dish-data").append(blockItem(el))
-//     );
-//   })()
-// );
-
-
+/*render database*/
 (async () => {
+
   const data = await database();
-  return data.map((el) =>
+  
+
+  return data.forEach((el) =>
+
     document.querySelector(".dish-data").append(blockItem(el))
   );
 })();
 
-const renderButton = async () => {
-  const data = await database();
-  return data.map((el) => 
-    document.querySelector('.container-buttons').append(CategoryButton(el))
+/*  Category Buttons  */
+(async () => {
+
+  const data = await uniqueCategoryButtons(database());
+
+  return data.forEach((el) => 
+  document.querySelector('.container-buttons').append(CategoryButton(el))
   )
-};
 
-renderButton()
+  
+})();
 
+/*Category button (show all)*/
+document.querySelector('.container-buttons').append(isShowAllCategory());
+
+
+/*Modal window with adding recipes*/
 document.getElementById('btnHeader').addEventListener('click', addRecipeWindow);
+
+/*Sidebar*/
 document.querySelector('.open-aside').addEventListener('click', asideTransition);
 
-
-// const filterNew = (category,items) => {
-  
-  
-//   const buttons = document.querySelectorAll('.btn-filter');
-
-//   function filter () {
-    
-
-//     items.forEach(item => {
-     
-//       const isItemFiltered = !item.classList.contains(category);
-
-//       const isShowAll = category.toLowerCase() === 'all';
-
-//       if (isItemFiltered && !isShowAll){
-//         item.classList.add('dnone');
-//       } else { 
-//         item.classList.remove('dnone');
-//       }
-//     })
-//   }
-
-//    buttons.forEach(button => {
-  
-    
-    
-//     button.addEventListener('click', () => {
-
-//        const cards = document.querySelectorAll('.data-item');
-
-//        const currentCategory = button.dataset.filter;
-
-//        filter(currentCategory, cards )
-//      })
-//    })
-
-
-// }
-
-// filterNew()
